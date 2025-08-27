@@ -1,11 +1,14 @@
-import './App.css'
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-    <h1>Planify-frontend</h1>
-    </>
-  )
+    <div>
+      <Navbar />
+      <h1>Welcome to Planify 🚀</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
