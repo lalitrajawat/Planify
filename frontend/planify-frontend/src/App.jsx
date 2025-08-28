@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import LoginPage from "./components/LoginPage";
 import { Routes, Route } from "react-router-dom";
@@ -16,4 +17,3 @@ function App() {
 }
 
 export default App;
-

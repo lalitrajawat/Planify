@@ -5,14 +5,12 @@ import "../styles/Signup.css";
      <div className="signup-box">
          {/* Left Panel */}
          <div className="signup-left">
-             <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" alt="background" className="signup-img" /> 
+             <img src="/assets/signupIMG1.png" alt="background" className="signup-img" /> 
              <div className="signup-overlay"> 
                 <div className="signup-header"> 
                     <h1 className="logo">Planify</h1>
-                     <button className="back-btn">Back to website</button>
                       </div>
-                       <p className="signup-tagline"> Capturing Moments, 
-                        <br /> Creating Memories </p> 
+                       <p className="signup-tagline"> Ideas grow when you begin — sign up now.</p> 
                         </div> 
                         </div> 
                         {/* Right Panel */} 
