@@ -5,7 +5,7 @@ import "../styles/Signup.css";
      <div className="signup-box">
          {/* Left Panel */}
          <div className="signup-left">
-             <img src="/assets/signupIMG1.png" alt="background" className="signup-img" /> 
+             <img src="/assets/signupIMG.png" alt="background" className="signup-img" /> 
              <div className="signup-overlay"> 
                 <div className="signup-header"> 
                     <h1 className="logo">Planify</h1>

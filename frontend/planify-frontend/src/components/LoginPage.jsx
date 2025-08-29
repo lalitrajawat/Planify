@@ -34,7 +34,7 @@ export default function LoginPage() {
 
         {/* Right Panel (Image Side) */}
         <div className="login-right">
-          <img src="/assets/signupIMG1.png" alt="background" className="login-img" />
+          <img src="/assets/loginIMG.png" alt="background" className="login-img" />
           <div className="login-overlay">
             <div className="login-header">
               <h1 className="logo">Planify</h1>
