@@ -1,7 +1,23 @@
 import "../styles/LoginPage.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-export default function LoginPage() {
+export default function LoginPage({ login }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError("");
+
+    if (login(email, password)) {
+      navigate("/dashboard");
+    } else {
+      setError("Invalid email or password. Please try again.");
+    }
+  };
   return (
     <div className="login-container">
       <div className="login-box">
@@ -13,18 +29,36 @@ export default function LoginPage() {
             Don’t have an account? <Link to="/">Sign up here</Link>
           </p>
 
-          <input type="email" placeholder="Email address" className="login-input" />
-          <input type="password" placeholder="Password" className="login-input" />
+          <form onSubmit={handleSubmit}>
+            <input 
+              type="email" 
+              placeholder="Email address" 
+              className="login-input" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input 
+              type="password" 
+              placeholder="Password" 
+              className="login-input" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
 
-          <div className="login-row">
-            <div className="login-remember">
-              <input type="checkbox" id="remember" />
-              <label htmlFor="remember">Remember me</label>
+            {error && <div className="error-message">{error}</div>}
+
+            <div className="login-row">
+              <div className="login-remember">
+                <input type="checkbox" id="remember" />
+                <label htmlFor="remember">Remember me</label>
+              </div>
+              <Link to="/forgot-password" className="login-forgot">Forgot password?</Link>
             </div>
-            <Link to="/forgot-password" className="login-forgot">Forgot password?</Link>
-          </div>
 
-          <button className="login-btn">Login</button>
+            <button type="submit" className="login-btn">Login</button>
+          </form>
 
           <div className="login-row">
             <button className="login-btn small">Google</button>
