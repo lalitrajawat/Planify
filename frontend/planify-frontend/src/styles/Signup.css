@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #2b2a33;
+    background: #423d57;
 }
 
 
@@ -34,6 +34,14 @@
 
 /* Left panel */
 
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: -4px;
+}
+
 .signup-left {
     width: 50%;
     position: relative;
@@ -59,7 +67,6 @@
 
 .signup-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 

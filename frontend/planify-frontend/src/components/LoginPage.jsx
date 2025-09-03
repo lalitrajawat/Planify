@@ -71,7 +71,8 @@ export default function LoginPage({ login }) {
           <img src="/assets/loginIMG.png" alt="background" className="login-img" />
           <div className="login-overlay">
             <div className="login-header">
-              <h1 className="logo">Planify</h1>
+              <img src="src/assets/logo.png" alt="logo" id="logoIMG"/>
+              <h1 className="logo">lanify</h1>
             </div>
             <p className="login-tagline">One step closer to your goals — log in now.</p>
           </div>

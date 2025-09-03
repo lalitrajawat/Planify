@@ -1,4 +1,4 @@
-import React, { useState, createContext, useContext } from "react";
+import React from "react";
 import "./App.css";
 import Signup from "./components/Signup";
 import LoginPage from "./components/LoginPage";
@@ -27,6 +27,7 @@ function App() {
   };
 
   // Protected Route component
+  
   const ProtectedRoute = ({ children }) => {
     return isAuthenticated ? children : <Navigate to="/login" />;
   };

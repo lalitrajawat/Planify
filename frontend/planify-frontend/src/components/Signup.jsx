@@ -8,7 +8,8 @@ import "../styles/Signup.css";
              <img src="/assets/signupIMG.png" alt="background" className="signup-img" /> 
              <div className="signup-overlay"> 
                 <div className="signup-header"> 
-                    <h1 className="logo">Planify</h1>
+                          <img src="src/assets/logo.png" alt="logo" id="logoIMG"/>
+              <h1 className="logo">lanify</h1>
                       </div>
                        <p className="signup-tagline"> Ideas grow when you begin — sign up now.</p> 
                         </div> 
